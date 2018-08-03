@@ -1,0 +1,100 @@
+html {
+    margin: 0; 
+    padding: 0;
+    font-size: 16px; 
+}
+
+body {
+    background: #FFF;
+    margin: 2em;
+    padding: 0; 
+}
+
+header {
+    height: 7em;
+    width: 100%; 
+}
+
+#site-logo {
+    height: inherit; 
+    width: 30%; 
+    background: #3D8EB9;
+    float: left;
+}
+
+nav {
+    height: inherit; 
+    width: 68%; 
+    background: #D2D7D3;
+    float: right; 
+}
+
+.jumbotron {
+    height: 20em; 
+    width: 100%;
+    margin-top: 1em;
+    background: #6C8784;
+}
+
+.card-container {
+    margin-top: 1em;
+    height: 20em;
+    width: 100%;
+}
+
+.card-wrapper {
+    margin: auto;
+    text-align: center;
+    height: 100%; 
+    width: 100%;
+    font-size: 0;
+}
+
+.card {
+    height: 100%; 
+    width: 32%;
+    margin-right: 2%;
+    background: #83D6DE;
+    display: inline-block;    
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.footer {
+    height: 12em;
+    width: 100%; 
+    background: #60646D;
+    margin-top: 1em;
+}
+
+@media only screen 
+and (max-width : 320px) { 
+        
+    header {
+        height: 3em;
+    }
+    .jumbotron {
+        height: 10em;
+    }
+    
+    .card-container {
+        height: 15em;
+    }
+    
+    .card {
+        display: block; 
+        width: 100%;
+        height: 32%;
+        margin: 0 0 2% 0; 
+    }
+    
+    .card:last-child {
+        margin: 0;
+    }
+    
+    .footer {
+        height: 6em;
+    }
+}
