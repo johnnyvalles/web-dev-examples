@@ -1,0 +1,19 @@
+/* Styling for Sticky Footer Method 2 */
+html, body {
+	margin: 0; 
+	height: 100%; 
+	width: 100%;
+	display: table;
+}
+
+.wrapper {
+	background: lightblue; 
+	padding: 100px;
+}
+
+footer {
+	background: slategray !important; 
+	display: table-row;
+	height: 1px;
+	padding-top: 400px;
+}

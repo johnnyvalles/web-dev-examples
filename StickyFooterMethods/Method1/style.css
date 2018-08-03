@@ -1,0 +1,23 @@
+/* Styling for Sticky Footer Method 1 */
+html, body {
+	margin: 0;
+	padding: 0;
+
+	/* Required Properties for Sticky Footer */ 
+	height: 100%;
+	width: 100%; 		
+	display: table; 
+}
+
+.wrapper {
+	padding: 0; 
+	height: auto;
+}
+
+footer {
+	background: slategray;
+
+	/* Required properties for proper rendering */
+	display: table-row;
+	height: 1px;  
+}
