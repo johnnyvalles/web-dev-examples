@@ -1,2 +1,2 @@
-# WebDev
-A collection of web development examples and projects using HTML, CSS and JS. 
+# Web Development using HTML, CSS, and JavaScript
+
