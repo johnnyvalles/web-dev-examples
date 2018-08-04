@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+html, body {
+    margin: 0; 
+    padding: 0;
+}
+
+/* General Container */
+.container {
+    max-width: 960px;
+    width: 100%;
+    height: 100%; 
+    margin: 0 auto;
+    background: inherit;
+}
+
+/* Site Header Styling */
+header {
+    background: #FFFFFF;
+    height: 5em;
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: 20000;
+    box-shadow: 0 3.5px 5px -2px rgba(0,0,0,0.1);
+}
+
+#main-logo {
+    background: url('../images/site-logo@3x.png') no-repeat center;
+    height: 100%; 
+    width: 5em;
+    float: left;
+}
+
+/* Site Header Nav Styling */
+.main-links {
+    position: relative; 
+    float: right;
+    height: 5em;
+}
+
+.main-links ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+    height: 100%; 
+}
+
+#mobile-menu {
+    height: 1.5em;
+    width: 1.5em;
+    margin-top: 1.75em; 
+    float: right;
+    margin-right: 2em;
+    background: url('../images/ham-menu.png') no-repeat center;
+    background-size: cover;
+    display: none; 
+}
+
+#menu-close {
+    background: url('../images/ham-close.png') no-repeat center;
+    background-size: cover;
+    margin-right: 2em;
+    height: 1.5em;
+    width: 1.5em;
+    margin-top: 1.75em; 
+    float: right;
+    display: none; 
+}
+
+.main-links ul li {
+    display: inline-block;
+    margin-right: 2em;
+    height: 100%;
+    line-height: 5em;
+}
+
+.main-links ul li a {
+    color: #EE543A;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.main-links ul li a:hover {
+    color: #FF9F55; 
+}
+
+/* Intro Banner Styling */
+.intro-banner {
+    position: relative; 
+    background: green;
+    clear: both;
+    margin-top: 5em; 
+    height: 25em; 
+    width: 100%;
+    background: url('../images/intro-pattern.png') repeat center;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 3.5px .5px -2px rgba(0,0,0,0.05);
+}
+
+#intro-text {
+    width: 50%;
+    height: 100%; 
+    float: left;
+    padding: 2em 2em 2em 0;
+    box-sizing: border-box;
+}
+
+#intro-text h2 {
+    padding: 0; 
+    margin: 0;
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif; 
+    color: #EE543A;
+}
+
+#intro-text p {
+    margin: 0; 
+    padding: 0 3em;
+    font-family: 'Open Sans', sans-serif;
+/*    text-align: left;*/
+    font-size: 1.4em; 
+}
+
+#intro-img {
+    width: 50%;
+    height: 100%;
+    float: right;
+    overflow: hidden;
+}
+
+#intro-img img {
+    margin-top: 4em;
+    padding: 0; 
+}
+
+#session-info {
+    background: url('../images/topography.png');
+    padding: 5em; 
+}
+
+/* Styling for Session Information Cards */
+#session-info .container {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.card-view {
+    height: 20em;
+    width: 23em;
+    margin: 0 .5em;
+    box-shadow: 7px 7px 10px lightgray;
+}
+
+.card-view:hover {
+    box-shadow: 7px 7px 10px lightgray;
+}
+
+.meet-location {
+    height: 65%; 
+    width: 100%;
+    color: #FFFFF7;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.meet-location .overlay {
+    height: 100%; 
+    width: 100%; 
+}
+
+.meet-location .overlay span {
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.overlay span:first-child {
+    position: relative; 
+    padding-top: 1.5em;  
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+
+.meet-date-time {
+    background: #FFFFF7;
+    height: 35%; 
+    width: 100%; 
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #60646D;
+}
+
+.first-meet {
+    float: left;
+    width: 50%; 
+    height: 100%;
+    text-transform: uppercase;
+    padding: 1em 0 0 0; 
+    box-sizing: border-box;
+}
+
+.meet-time {
+    display: block; 
+    margin-top: 0.7em;
+/*    color: #2C82C9;*/
+    color: rgb(238, 84, 58);
+}
+
+.sec-meet {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-transform: uppercase;
+    padding: .3em; 
+    box-sizing: border-box; 
+    padding: 1em 0 0 0; 
+}
+
+#course-one .meet-location {
+    background: url('../images/resources.png');
+    background-size: cover;
+}
+#course-one .overlay {
+    background: rgba(238, 84, 58, 0.725);
+}
+#course-one .overlay:hover {
+    background: rgba(238, 84, 58, .825);
+}
+
+#course-two .meet-location {
+    background: url('../images/mat11overlay.jpg');
+    background-size: cover;
+}
+#course-two .overlay {
+    background: rgba(79, 186, 111, 0.843);
+}
+#course-two .overlay:hover {
+    background: rgba(45, 153, 77, .925);
+}
+
+#resources .meet-location {
+    background: url('../images/lrc.jpg');
+}
+#resources .overlay {
+    background: rgba(240, 196, 25, 0.843)
+}
+#resources .overlay:hover {
+    background: rgba(237, 189, 4, 0.925)
+}
+
+#resources .meet-date-time ul {
+    margin: 0;  
+    padding: 0.3em 0 0 0; 
+    position: relative; 
+    width: 50%; 
+    display: block;
+    text-align: center;
+}
+                    
+#cis-res {
+    float: left; 
+}
+#mat-res { 
+float: right;
+}
+                    
+#resources .meet-date-time li {
+    list-style: none;
+    font-family: 'Oswald';
+                        
+}
+#resources .meet-date-time li a, a:link {
+    text-decoration: none;
+    color: #60646D;
+}
+#resources .meet-date-time li a:hover {
+    text-decoration: underline;
+    color: rgb(238, 84, 58);                    
+}
+
+#contact-intro {
+    background: url('../images/asanoha.png') repeat center;
+}
+
+#google-form {
+    margin: 0 auto; 
+    display: block;
+}
+
+#contact-form {
+    background: url('../images/topography.png') repeat center;
+    padding: 2.1em 0;
+    height: auto;
+}
+
+#google-form {
+    height: 62em; 
+    width: 90%; 
+}
+
+
+/* 
+    This media query is given priority over any inline styles left over by jQuery. It purpose is to reset styles left behind after resizing the 
+    viewport. 
+*/
+@media only screen and (min-width: 769px) {
+    .main-links {
+        top: 0 !important;
+        position: relative !important; 
+    }
+    
+    #mobile-menu, #menu-close {
+        display: none !important; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    #main-logo {
+        background: url('../images/site-logo@2x.png') no-repeat center;
+    }
+    
+    /* Hidden Menu Styling on Mobile*/
+    #mobile-menu {
+        display: block; 
+    }
+    .main-links {
+        position: absolute;
+        width: 100%;
+        top: -22em; 
+        background: white;
+        height: auto;
+        margin: 0;
+        z-index: -9999; 
+    }
+    
+    .main-links ul {
+        width: 100%;
+        padding: 0; 
+        margin: 0;
+        border-top: 1px solid #D2D7D3; 
+    }
+    
+    .main-links ul li {
+        display: block;
+        width: 100%; 
+        text-align: center;
+        padding: 0; 
+        margin: 0;
+        height: 2.5em;
+        line-height: normal;
+        border-bottom: 1px solid #D2D7D3;
+    }
+    
+    .main-links ul li a {
+        color: #EE543A;
+        font-family: 'Oswald', sans-serif;
+        text-decoration: none;
+        font-size: 1.4em;
+        display: inline-block;
+        height: 100%; 
+    }
+    
+    /* Intro Banner Styling on Mobile */
+    .intro-banner {
+        height: auto;
+        padding: 1em 0;
+    }
+    
+    #intro-text {
+        display: block; 
+        float: none;
+        width: 100%; 
+        margin: 0;
+        padding: 0; 
+    }
+    
+    #intro-text p {
+        padding: 0 1.5em; 
+    }
+    
+    #intro-img {
+        display: none; 
+    }
+    
+    #session-info {
+        width: 100%; 
+        height: 100%; 
+    }
+    
+    #session-info .container {
+        display: block;
+        padding: 0;
+        position: relative; 
+        padding: 1em;
+    }
+    
+    #session-info .container .card-view {
+        margin: 1em auto;
+        width: 70%;
+    }
+    
+    #session-info {
+        padding: 0; 
+        
+    }
+    
+    #session-info .container {
+        flex: none; 
+        display: block;
+        width: auto; 
+        height:auto
+    }
+}
